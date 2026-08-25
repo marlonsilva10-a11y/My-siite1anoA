@@ -6,81 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Animes</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #183C63; /* Fundo principal */
+            background-color: #183C63;
+            color: #FFFFFF;
         }
 
         header {
             background-color: #ff9a03;
             color: #ffffff; 
             text-align: center;
-            padding: 20px;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
         }
 
         main {
-            color: #FFFFFF;
-            padding: 20px;
             max-width: 800px;
-            margin: 0 auto; /* Centraliza o conteúdo na tela */
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        /* Estilo para os blocos de cada anime */
+        .post-intro {
+            background-color: #122d4b;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+
+        /* Estilo para cada card de anime */
         .resenha {
-            background-color: #245282; /* Um azul um pouco mais claro para destacar */
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px; /* Deixa as bordas arredondadas */
+            background-color: #245282;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
             text-align: center;
-        }
-
-        .resenha img {
-            max-width: 100%; /* A imagem não vai vazar da tela no celular */
-            height: auto;
-            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         .resenha h3 {
-            color: #F5B914; /* Título do anime em amarelo */
+            color: #F5B914;
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        .resenha img {
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin: 15px 0;
+            border: 2px solid #ff9a03;
+        }
+
+        .resenha p {
+            line-height: 1.6;
+            text-align: justify;
         }
     </style>
 </head>
 
 <body>
+
     <header>
         <h1>Meu Blog Tech</h1>
         <p>Vou compartilhar conhecimentos sobre animes e cultura POP</p>
     </header>
-    
+
     <main>
-        <h2>MEU PRIMEIRO POST</h2>
-        <p><strong>POR:</strong> Marlon Henrique</p>
-        <p>Boas-vindas, amigos OTAKUS! Aqui vou compartilhar conteúdos sobre mangás e animes. Confiram minhas recomendações de hoje:</p>
+        <section class="post-intro">
+            <h2>MEU PRIMEIRO POST</h2>
+            <p><strong>Por:</strong> Marlon Henrique</p>
+            <p>Boas-vindas, amigos OTAKUS! Aqui vou compartilhar conteúdos sobre mangás e animes. Confiram minhas recomendações abaixo:</p>
+        </section>
 
-        <!-- Bloco do One Piece -->
-        <div class="resenha">
+        <!-- Resenha 1: One Piece -->
+        <article class="resenha">
             <h3>One Piece</h3>
-            <img src="https://sm.ign.com/ign_br/tv/o/one-piece-/one-piece-2_grmx.jpg" alt="Pôster de One Piece">
-            <p>Acompanha Monkey D. Luffy e sua tripulação na busca pelo tesouro supremo, o One Piece, para se tornar o Rei dos Piratas. Uma obra incrível sobre liberdade, amizade e aventura sem limites!</p>
-        </div>
+            <img src="one-piece.jpg" alt="Pôster do anime One Piece">
+            <p><strong>Resenha:</strong> One Piece acompanha Monkey D. Luffy e sua tripulação em busca do tesouro supremo deixado pelo Rei dos Piratas. A obra se destaca pelo mundo extremamente detalhado, personagens cativantes e mensagens sobre liberdade, amizade e perseverança diante das adversidades.</p>
+        </article>
 
-        <!-- Bloco do Naruto -->
-        <div class="resenha">
+        <!-- Resenha 2: Naruto -->
+        <article class="resenha">
             <h3>Naruto</h3>
-            <img src="https://t.ctcdn.com.br/D3t8OaI0cR2t4O0D1xO16tH9eRw=/1200x675/smart/i810609.jpeg" alt="Pôster de Naruto">
-            <p>A jornada de Naruto Uzumaki, um jovem ninja que carrega uma raposa demônio selada dentro de si. Ele busca o reconhecimento de sua vila sonhando em se tornar o Hokage. Uma história emocionante sobre superação e laços.</p>
-        </div>
+            <img src="naruto.jpg" alt="Pôster do anime Naruto">
+            <p><strong>Resenha:</strong> A história de Naruto Uzumaki narra a jornada de um jovem rejeitado que sonha em se tornar o Hokage de sua vila para conquistar o respeito de todos. Com grandes batalhas e lições sobre superação e redenção, é um dos animes mais marcantes de todos os tempos.</p>
+        </article>
 
-        <!-- Bloco do Dragon Ball -->
-        <div class="resenha">
+        <!-- Resenha 3: Dragon Ball -->
+        <article class="resenha">
             <h3>Dragon Ball</h3>
-            <img src="https://sm.ign.com/ign_br/screenshot/default/dragon-ball-daima-onde-assistir-1_69y9.jpg" alt="Pôster de Dragon Ball">
-            <p>Acompanhe as aventuras de Goku desde sua infância até a vida adulta, treinando artes marciais e explorando o mundo em busca das sete Esferas do Dragão. O pilar dos animes de luta e poder que marcou gerações!</p>
-        </div>
-
+            <img src="dragon-ball.jpg" alt="Pôster do anime Dragon Ball">
+            <p><strong>Resenha:</strong> Dragon Ball relata a vida de Son Goku desde a infância até a idade adulta, treinando artes marciais e protegendo a Terra contra ameaças do universo. Pioneiro do gênero shonen moderno, influenciou gerações de mangás e animações no mundo todo.</p>
+        </article>
     </main>
+
 </body>
 
 </html>
