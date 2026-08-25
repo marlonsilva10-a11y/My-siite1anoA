@@ -3,32 +3,83 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>animes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Animes</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #183C63; /* Fundo principal */
+        }
+
         header {
             background-color: #ff9a03;
-            color: #F5B914 text-aling: center;
-
+            color: #ffffff; 
+            text-align: center;
+            padding: 20px;
         }
 
         main {
-            background-color:#183C63;
-                color:#FFFFFF;
+            color: #FFFFFF;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto; /* Centraliza o conteúdo na tela */
+        }
+
+        /* Estilo para os blocos de cada anime */
+        .resenha {
+            background-color: #245282; /* Um azul um pouco mais claro para destacar */
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px; /* Deixa as bordas arredondadas */
+            text-align: center;
+        }
+
+        .resenha img {
+            max-width: 100%; /* A imagem não vai vazar da tela no celular */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .resenha h3 {
+            color: #F5B914; /* Título do anime em amarelo */
         }
     </style>
 </head>
 
 <body>
     <header>
-
-        <h1>Meu blog tech</h1>
+        <h1>Meu Blog Tech</h1>
         <p>Vou compartilhar conhecimentos sobre animes e cultura POP</p>
     </header>
+    
     <main>
         <h2>MEU PRIMEIRO POST</h2>
-        <p>POR:Marlon Henrique</p>
-        <p>Boas vindas amigos OTAKUS AQUI VOU CONPARTILHAR CONTEUDOS SOBRE MANGAS E ANIMES </p>
+        <p><strong>POR:</strong> Marlon Henrique</p>
+        <p>Boas-vindas, amigos OTAKUS! Aqui vou compartilhar conteúdos sobre mangás e animes. Confiram minhas recomendações de hoje:</p>
+
+        <!-- Bloco do One Piece -->
+        <div class="resenha">
+            <h3>One Piece</h3>
+            <img src="https://sm.ign.com/ign_br/tv/o/one-piece-/one-piece-2_grmx.jpg" alt="Pôster de One Piece">
+            <p>Acompanha Monkey D. Luffy e sua tripulação na busca pelo tesouro supremo, o One Piece, para se tornar o Rei dos Piratas. Uma obra incrível sobre liberdade, amizade e aventura sem limites!</p>
+        </div>
+
+        <!-- Bloco do Naruto -->
+        <div class="resenha">
+            <h3>Naruto</h3>
+            <img src="https://t.ctcdn.com.br/D3t8OaI0cR2t4O0D1xO16tH9eRw=/1200x675/smart/i810609.jpeg" alt="Pôster de Naruto">
+            <p>A jornada de Naruto Uzumaki, um jovem ninja que carrega uma raposa demônio selada dentro de si. Ele busca o reconhecimento de sua vila sonhando em se tornar o Hokage. Uma história emocionante sobre superação e laços.</p>
+        </div>
+
+        <!-- Bloco do Dragon Ball -->
+        <div class="resenha">
+            <h3>Dragon Ball</h3>
+            <img src="https://sm.ign.com/ign_br/screenshot/default/dragon-ball-daima-onde-assistir-1_69y9.jpg" alt="Pôster de Dragon Ball">
+            <p>Acompanhe as aventuras de Goku desde sua infância até a vida adulta, treinando artes marciais e explorando o mundo em busca das sete Esferas do Dragão. O pilar dos animes de luta e poder que marcou gerações!</p>
+        </div>
+
     </main>
 </body>
 
